@@ -40,6 +40,8 @@ This application is docker ready for your deployment, here are the steps involve
 
 * Clone or Download this project
 * Run `$ mvn clean install` in order to build the application
+* Create a folder called  `data` inside  `docker-setup/mongodb` folder, to hold the MongoDB data
+* Create another folder called  `log` inside  `docker-setup/mongodb` folder, to hold the MongoDB Log
 * At the root of the application, run `$ docker network create messaging-network`
 * Next build the containers with the following command: `$ docker-compose --env-file “<path/to/your/project>/messaging-service/docker-setup/.env" build`
 * Where <path/to/your/project> is the path to the project. e.g. `$ docker-compose --env-file "/Users/ademola/developments/messaging-service/docker-setup/.env" build`
