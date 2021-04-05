@@ -29,5 +29,4 @@ build/
 
 ### VS Code ###
 .vscode/
-docker-setup/mongodb/data/*
 .DS_Store
